@@ -87,7 +87,7 @@ function M.setup()
 	vim.api.nvim_create_autocmd('InsertEnter', {
 		callback = function()
 			if need_switch_chinese() then
-				vim.notifyx("Chinese") -- 测试一下
+				vim.notify("Switch to Chinese") -- 测试内容
 				set_im_status(1)
 			end
 		end
